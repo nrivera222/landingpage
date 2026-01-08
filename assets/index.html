@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Tech Summit 2024 landing page (mockup-inspired) built with Bootstrap 5.3.3." />
+    <title>Tech Summit 2024</title>
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#topNavbar" data-bs-offset="92" tabindex="0">
+
+    <!-- HEADER + NAVBAR -->
+    <header id="inicio" class="hero">
+        <nav id="topNavbar" class="navbar navbar-expand-lg sticky-top nav-overlay" aria-label="Primary navigation">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+                    <i class="bi bi-cpu-fill" aria-hidden="true"></i>
+                    <span>Tech Summit 2024</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks"
+                    aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarLinks">
+                    <ul class="navbar-nav ms-auto mt-3 mt-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#oradores">Oradores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#registro">Registro</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO -->
+        <div class="container hero-inner">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <h1 class="hero-title">TECH SUMMIT 2024</h1>
+                    <p class="hero-subtitle mb-4">
+                        Innovación. Futuro. Conexión.
+                    </p>
+
+                    <div class="d-flex flex-wrap align-items-center gap-3">
+                        <a class="btn btn-cta" href="#registro">Regístrate Ahora</a>
+                        <a class="btn btn-outline-light rounded-pill px-3 py-2"
+                            style="border-color: rgba(255,255,255,0.14); color: rgba(231,234,240,0.82); background: rgba(255,255,255,0.03);"
+                            href="#agenda">
+                            Ver agenda
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <!-- (Opcional) Línea estilo countdown del mockup; se deja estática -->
+                    <div class="countdown-line mt-2 mt-lg-0">
+                        <span>DÍAS:</span> <span class="value" id="cdDays">07</span>
+                        <span class="sep">|</span>
+                        <span>HORAS:</span> <span class="value" id="cdHours">12</span>
+                        <span class="sep">|</span>
+                        <span>MINS:</span> <span class="value" id="cdMins">45</span>
+                        <span class="sep">|</span>
+                        <span>SECS:</span> <span class="value" id="cdSecs">30</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HIGHLIGHTS PANEL (incluye mini speakers + agenda resumida + ubicación) -->
+        <section class="highlight-panel-wrap" aria-label="Highlights panel">
+            <div class="container">
+                <div class="highlight-panel">
+                    <div class="row g-0">
+                        <!-- SPEAKERS column -->
+                        <div class="col-lg-5 panel-col">
+                            <div class="panel-heading">Speakers</div>
+
+                            <div class="speakers-grid  ">
+                                <div class="card speaker-mini">
+                                    <img class="speaker-photo ring-cyan" alt="Speaker avatar Dr. Araya Ghema"
+                                        src="./img/pexels-moose-photos-170195-1587009.jpg" />
+                                    <p class="speaker-name">Dr. Araya Ghema</p>
+                                    <p class="speaker-meta">AI Ethics</p>
+                                </div>
+                                <div class="card speaker-mini">
+                                    <img class="speaker-photo ring-cyan" alt="Speaker avatar Dr. Araya Ghema"
+                                        src="./img/pexels-moose-photos-170195-1587009.jpg" />
+                                    <p class="speaker-name">Dr. Araya Ghema</p>
+                                    <p class="speaker-meta">AI Ethics</p>
+                                </div>
+                                <div class="card speaker-mini">
+                                    <img class="speaker-photo ring-cyan" alt="Speaker avatar Dr. Araya Ghema"
+                                        src="./img/pexels-moose-photos-170195-1587009.jpg" />
+                                    <p class="speaker-name">Dr. Araya Ghema</p>
+                                    <p class="speaker-meta">AI Ethics</p>
+                                </div>
+                                <div class="card speaker-mini">
+                                    <img class="speaker-photo ring-cyan" alt="Speaker avatar Dr. Araya Ghema"
+                                        src="./img/pexels-moose-photos-170195-1587009.jpg" />
+                                    <p class="speaker-name">Dr. Araya Ghema</p>
+                                    <p class="speaker-meta">AI Ethics</p>
+                                </div>
+                                <div class="card speaker-mini">
+                                    <img class="speaker-photo ring-cyan" alt="Speaker avatar Dr. Araya Ghema"
+                                        src="./img/pexels-moose-photos-170195-1587009.jpg" />
+                                    <p class="speaker-name">Dr. Araya Ghema</p>
+                                    <p class="speaker-meta">AI Ethics</p>
+                                </div>
+                                <div class="card speaker-mini">
+                                    <img class="speaker-photo ring-purple" alt="Speaker avatar Prof. Ben Carter"
+                                        src="./img/pexels-moose-photos-170195-1587009.jpg" />
+                                    <p class="speaker-name">Prof. Ben Carter</p>
+                                    <p class="speaker-meta">Quantum Computing</p>
+                                </div>
+
+                                <div class="card speaker-mini">
+                                    <img class="speaker-photo ring-mint" alt="Speaker avatar Prof. Clara Liao"
+                                        src="./img/pexels-moose-photos-170195-1587009.jpg" />
+                                    <p class="speaker-name">Prof. Clara Liao</p>
+                                    <p class="speaker-meta">Deep Learning</p>
+                                </div>
+
+                                <div class="card speaker-mini">
+                                    <img class="speaker-photo ring-sky" alt="Speaker avatar Ms. Olivia Lee"
+                                        src="./img/pexels-moose-photos-170195-1587009.jpg" />
+                                    <p class="speaker-name">Ms. Olivia Lee</p>
+                                    <p class="speaker-meta">Cybersecurity</p>
+                                </div>
+
+                                <div class="card speaker-mini">
+                                    <img class="speaker-photo ring-violet" alt="Speaker avatar Mr. Daniel Chen"
+                                        src="./img/pexels-moose-photos-170195-1587009.jpg" />
+                                    <p class="speaker-name">Mr. Daniel Chen</p>
+                                    <p class="speaker-meta">Blockchain</p>
+                                </div>
+
+
+                                <div class="card speaker-mini">
+                                    <img class="speaker-photo ring-violet" alt="Speaker avatar Mr. Daniel Chen"
+                                        src="./img/pexels-moose-photos-170195-1587009.jpg" />
+                                    <p class="speaker-name">Mr. Daniel Chen</p>
+                                    <p class="speaker-meta">Blockchain</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- AGENDA column -->
+                        <div class="col-lg-4 panel-col">
+                            <div class="panel-heading">Agenda</div>
+                            <div class="list-group panel-agenda" role="list">
+                                <div class="list-group-item" role="listitem">
+                                    <span class="bullet" aria-hidden="true"></span>
+                                    <span class="agenda-text">Oct 26: AI &amp; ML Workshops</span>
+                                </div>
+                                <div class="list-group-item" role="listitem">
+                                    <span class="bullet" aria-hidden="true"></span>
+                                    <span class="agenda-text">Oct 27: Keynotes &amp; Panels</span>
+                                </div>
+                                <div class="list-group-item" role="listitem">
+                                    <span class="bullet" aria-hidden="true"></span>
+                                    <span class="agenda-text">Future Tech Expo</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- LOCATION column -->
+                        <div class="col-lg-3 panel-col">
+                            <div class="panel-heading">Location</div>
+                            <div class="location-icon" aria-hidden="true">
+                                <i class="bi bi-geo-alt-fill fs-4"></i>
+                            </div>
+                            <div class="location-text">
+                                <span class="muted">Virtual &amp; On-Site:</span><br />
+                                Silicon Valley, CA
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE EL EVENTO -->
+        <section id="sobre" class="section-pad" aria-label="Sobre el evento">
+            <div class="container">
+                <div class="row g-4 align-items-start">
+                    <div class="col-lg-5">
+                        <div class="section-title">Sobre el Evento</div>
+                        <p class="section-lead mb-0">
+                            Tech Summit 2024 reúne a líderes y builders para explorar innovación aplicada: IA,
+                            seguridad, datos y
+                            sistemas modernos. Charlas concisas, workshops prácticos y conexiones reales.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="surface-card p-4 p-md-5">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="d-flex gap-3">
+                                        <div style="color: var(--cyan); margin-top: 2px;">
+                                            <i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <div class="fw-bold">Keynotes &amp; Panels</div>
+                                            <div class="text-secondary-emphasis"
+                                                style="color: rgba(166,175,191,0.95) !important;">
+                                                Tendencias, casos reales y decisiones técnicas.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="d-flex gap-3">
+                                        <div style="color: var(--cyan); margin-top: 2px;">
+                                            <i class="bi bi-wrench-adjustable-circle-fill" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <div class="fw-bold">Workshops</div>
+                                            <div class="text-secondary-emphasis"
+                                                style="color: rgba(166,175,191,0.95) !important;">
+                                                Hands-on para acelerar aprendizaje práctico.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="d-flex gap-3">
+                                        <div style="color: var(--cyan); margin-top: 2px;">
+                                            <i class="bi bi-shield-lock-fill" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <div class="fw-bold">Security Mindset</div>
+                                            <div class="text-secondary-emphasis"
+                                                style="color: rgba(166,175,191,0.95) !important;">
+                                                Buenas prácticas para productos resilientes.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="d-flex gap-3">
+                                        <div style="color: var(--cyan); margin-top: 2px;">
+                                            <i class="bi bi-people-fill" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <div class="fw-bold">Networking</div>
+                                            <div class="text-secondary-emphasis"
+                                                style="color: rgba(166,175,191,0.95) !important;">
+                                                Conecta con comunidad, mentores y empresas.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-4" style="border-color: rgba(255,255,255,0.08);" />
+
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge rounded-pill text-bg-dark">AI</span>
+                                <span class="badge rounded-pill text-bg-dark">Cloud</span>
+                                <span class="badge rounded-pill text-bg-dark">Security</span>
+                                <span class="badge rounded-pill text-bg-dark">Data</span>
+                                <span class="badge rounded-pill text-bg-dark">Product</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ORADORES (Cards Bootstrap con foto, nombre y "bio" breve) -->
+        <section id="oradores" class="section-pad" aria-label="Oradores">
+            <div class="container">
+                <div class="section-title">Oradores</div>
+                <p class="section-lead">
+                    Perfiles de oradores en formato Card. (Las biografías detalladas no estaban incluidas en el material
+                    original; quedan marcadas como “por confirmar”.)
+                </p>
+
+                <div class="row g-4 mt-1">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card speaker-card">
+                            <img class="card-img-top" alt="Foto de Dr. Araya Ghema"
+                                src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20160%20100%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%2300d1ff%27/%3E%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%238a2be2%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%27160%27%20height%3D%27100%27%20fill%3D%27url(%23g)%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2758%25%27%20text-anchor%3D%27middle%27%20font-family%3D%27system-ui%2C%20Segoe%20UI%2C%20Arial%27%20font-size%3D%2732%27%20font-weight%3D%27800%27%20fill%3D%27%23070a0e%27%20opacity%3D%270.85%27%3EAG%3C/text%3E%3C/svg%3E" />
+                            <div class="card-body">
+                                <h3 class="card-title h5 mb-1">Dr. Araya Ghema</h3>
+                                <div class="d-flex flex-wrap gap-2 mb-2">
+                                    <span class="badge rounded-pill text-bg-dark">AI Ethics</span>
+                                </div>
+                                <p class="card-text mb-0">Bio (por confirmar).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card speaker-card">
+                            <img class="card-img-top" alt="Foto de Prof. Ben Carter"
+                                src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20160%20100%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%238a2be2%27/%3E%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%2300bfff%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%27160%27%20height%3D%27100%27%20fill%3D%27url(%23g)%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2758%25%27%20text-anchor%3D%27middle%27%20font-family%3D%27system-ui%2C%20Segoe%20UI%2C%20Arial%27%20font-size%3D%2732%27%20font-weight%3D%27800%27%20fill%3D%27%23070a0e%27%20opacity%3D%270.85%27%3EBC%3C/text%3E%3C/svg%3E" />
+                            <div class="card-body">
+                                <h3 class="card-title h5 mb-1">Prof. Ben Carter</h3>
+                                <div class="d-flex flex-wrap gap-2 mb-2">
+                                    <span class="badge rounded-pill text-bg-dark">Quantum Computing</span>
+                                </div>
+                                <p class="card-text mb-0">Bio (por confirmar).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card speaker-card">
+                            <img class="card-img-top" alt="Foto de Prof. Clara Liao"
+                                src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20160%20100%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%2300bfff%27/%3E%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%2300d1ff%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%27160%27%20height%3D%27100%27%20fill%3D%27url(%23g)%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2758%25%27%20text-anchor%3D%27middle%27%20font-family%3D%27system-ui%2C%20Segoe%20UI%2C%20Arial%27%20font-size%3D%2732%27%20font-weight%3D%27800%27%20fill%3D%27%23070a0e%27%20opacity%3D%270.85%27%3ECL%3C/text%3E%3C/svg%3E" />
+                            <div class="card-body">
+                                <h3 class="card-title h5 mb-1">Prof. Clara Liao</h3>
+                                <div class="d-flex flex-wrap gap-2 mb-2">
+                                    <span class="badge rounded-pill text-bg-dark">Deep Learning</span>
+                                </div>
+                                <p class="card-text mb-0">Bio (por confirmar).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card speaker-card">
+                            <img class="card-img-top" alt="Foto de Ms. Olivia Lee"
+                                src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20160%20100%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%234db4ff%27/%3E%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%2300d1ff%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%27160%27%20height%3D%27100%27%20fill%3D%27url(%23g)%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2758%25%27%20text-anchor%3D%27middle%27%20font-family%3D%27system-ui%2C%20Segoe%20UI%2C%20Arial%27%20font-size%3D%2732%27%20font-weight%3D%27800%27%20fill%3D%27%23070a0e%27%20opacity%3D%270.85%27%3EOL%3C/text%3E%3C/svg%3E" />
+                            <div class="card-body">
+                                <h3 class="card-title h5 mb-1">Ms. Olivia Lee</h3>
+                                <div class="d-flex flex-wrap gap-2 mb-2">
+                                    <span class="badge rounded-pill text-bg-dark">Cybersecurity</span>
+                                </div>
+                                <p class="card-text mb-0">Bio (por confirmar).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card speaker-card">
+                            <img class="card-img-top" alt="Foto de Mr. Daniel Chen"
+                                src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20160%20100%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23b078ff%27/%3E%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%234db4ff%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%27160%27%20height%3D%27100%27%20fill%3D%27url(%23g)%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2758%25%27%20text-anchor%3D%27middle%27%20font-family%3D%27system-ui%2C%20Segoe%20UI%2C%20Arial%27%20font-size%3D%2732%27%20font-weight%3D%27800%27%20fill%3D%27%23070a0e%27%20opacity%3D%270.85%27%3EDC%3C/text%3E%3C/svg%3E" />
+                            <div class="card-body">
+                                <h3 class="card-title h5 mb-1">Mr. Daniel Chen</h3>
+                                <div class="d-flex flex-wrap gap-2 mb-2">
+                                    <span class="badge rounded-pill text-bg-dark">Blockchain</span>
+                                </div>
+                                <p class="card-text mb-0">Bio (por confirmar).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AGENDA (List Group) -->
+        <section id="agenda" class="section-pad" aria-label="Agenda">
+            <div class="container">
+                <div class="section-title">Agenda</div>
+                <p class="section-lead">
+                    Diseño simple con List Group (puedes reemplazar/expandir los ítems cuando tengas el programa
+                    completo).
+                </p>
+
+                <div class="surface-card p-4 p-md-5 mt-3">
+                    <div class="list-group agenda-extended">
+                        <div class="list-group-item">
+                            <div class="when">Día 1</div>
+                            <div class="what">Oct 26: AI &amp; ML Workshops</div>
+                            <p class="desc mb-0">Sesiones prácticas enfocadas en inteligencia artificial y machine
+                                learning.</p>
+                        </div>
+
+                        <div class="list-group-item">
+                            <div class="when">Día 2</div>
+                            <div class="what">Oct 27: Keynotes &amp; Panels</div>
+                            <p class="desc mb-0">Charlas principales y paneles con expertos de la industria.</p>
+                        </div>
+
+                        <div class="list-group-item">
+                            <div class="when">Expo</div>
+                            <div class="what">Future Tech Expo</div>
+                            <p class="desc mb-0">Exhibición de tecnología y tendencias (detalles por anunciar).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REGISTRO (Formulario + Modal) -->
+        <section id="registro" class="section-pad" aria-label="Formulario de registro">
+            <div class="container">
+                <div class="row g-4 align-items-start">
+                    <div class="col-lg-5">
+                        <div class="section-title">Registro</div>
+                        <p class="section-lead">
+                            Completa tus datos. Al enviar, verás una confirmación en un Modal de Bootstrap.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="surface-card p-4 p-md-5">
+                            <form id="registrationForm" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="regName" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="regName" name="name" required />
+                                    <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="regEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="regEmail" name="email" required />
+                                    <div class="invalid-feedback">Por favor ingresa un email válido.</div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="regRole" class="form-label">Cargo / Puesto de trabajo</label>
+                                    <input type="text" class="form-control" id="regRole" name="role" required />
+                                    <div class="invalid-feedback">Por favor indica tu cargo o puesto.</div>
+                                </div>
+
+                                <div class="d-flex flex-wrap gap-2 align-items-center">
+                                    <button type="submit" class="btn btn-cta">Enviar Registro</button>
+                                    <span class="text-secondary-emphasis"
+                                        style="color: rgba(166,175,191,0.95) !important;">
+                                        Recibirás confirmación en pantalla.
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal confirmación -->
+            <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title fs-5" id="confirmModalLabel">Registro confirmado</h2>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="mb-2">Gracias por registrarte en <strong>Tech Summit 2024</strong>.</p>
+                            <div class="surface-card p-3" style="border-radius: 14px;">
+                                <div class="small" style="color: rgba(166,175,191,0.96); letter-spacing: 0.02em;">
+                                    Detalle</div>
+                                <div class="mt-2">
+                                    <div><strong>Nombre:</strong> <span id="cName">—</span></div>
+                                    <div><strong>Email:</strong> <span id="cEmail">—</span></div>
+                                    <div><strong>Cargo:</strong> <span id="cRole">—</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-light rounded-pill px-3"
+                                style="border-color: rgba(255,255,255,0.14); color: rgba(231,234,240,0.86); background: rgba(255,255,255,0.03);"
+                                data-bs-dismiss="modal">
+                                Cerrar
+                            </button>
+                            <a class="btn btn-cta" href="#inicio" data-bs-dismiss="modal">Volver al inicio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4">
+        <div class="container">
+            <div class="row g-3 align-items-center">
+                <div class="col-md-6">
+                    <div class="footer-text">
+                        © Tech Summit 2024 — Landing con Bootstrap
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="social" aria-label="Social links fixed">
+                        <!-- Enlaces sin URL real (para evitar inventar). Puedes reemplazarlos por tus URLs reales. -->
+                        <a href="#!" aria-label="X / Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#!" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#!" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js">
+
+    </script>
+</body>
+
+</html>
