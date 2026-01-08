@@ -28,5 +28,7 @@
         form.classList.remove('was-validated');
 
         confirmModal.show();
+        
       });
     })();
+    
